@@ -1,9 +1,9 @@
 package $package$
 
-import org.scalatest._
-import Matchers._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class $classname$Spec extends FlatSpec {
+class $classname$Spec extends AnyFlatSpec with Matchers {
 
   behavior of "$classname$#greet"
 
@@ -11,6 +11,6 @@ class $classname$Spec extends FlatSpec {
     val target = new $classname$
     val result = target.greet
 
-    result should equal ("This is built from Giter8 template project.")
+    result should equal("This is built from Giter8 template project.")
   }
 }
